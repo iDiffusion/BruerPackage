@@ -22,7 +22,8 @@ public:
 	vector<double> zVertricies;
 
 	MeshObject(string file);
-	vector<Point> getPointsInDistance(Point p, double angle, double distance);
+	Point getPointAtDistance(Point p, double angle, double distance);
+	vector<Point> getPointsOutsideDistance(Point p, double distance);
 	virtual ~MeshObject();
 private:
 	void readFile(string fileName);
